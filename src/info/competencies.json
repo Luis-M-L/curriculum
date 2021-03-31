@@ -1,0 +1,24 @@
+[
+	{	"datatype": "competencies"},
+	{
+		"label": "Social skills and competencies",
+		"description": [
+			"Leadership and personal communication, naturally developed and boosted in student temporal jobs."
+		]
+	},
+	{
+		"label": "Management skills and competencies",
+		"description": [
+			"Tasks division for a team, naturally developed and boosted in student temporal jobs.",
+			"Own time managing, needed when I was working while studing."
+		]
+	},
+	{
+		"label": "Technical skills and competencies",
+		"description": [
+			"Programming skills (Java, Android, Matlab JavaScript, y SQL) and telecomunication (broadcasting, voice, IP networks, signal encoding, etc.) adquired in the degree and furtherly developed by my own curiosity.",
+			"Ranked third in Cangur contest about maths(level 4 – Baccalaureate 2nd.) in Valencian Region.",
+			"Honored with the best academic record in Telecommunications Degree second year awarded by Universitat Politècnica de València, (2014/2015 academic year)."
+		]
+	}
+]

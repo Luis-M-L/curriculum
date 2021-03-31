@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.fecha-puesto {
+	font-family: cursive;
+}
+.position {
+	font-family: cursive;
+}
+
+.milestone-form, .position {
+	 display: inline-block;
+	 padding: 5px 25px 5px 25px;
+}
+
+.personal-container, .personal-data, .foto-container {
+	 display: inline-block;
+	 padding: 5px 25px 5px 25px;
+}
+
+.milestone-form, .company-form, .sector-form {
+	text-align: right;
+}

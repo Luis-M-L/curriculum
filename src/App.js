@@ -6,9 +6,13 @@ import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //import "./styles.css";
 
+import personalInfo from './info/personal_info.json';				
+import workingExperience from './info/working_experience.json';	
+import academicFormation from './info/academic_formation.json';	
+import competencies from './info/competencies.json';				
 
 function App() {
-	const text = "test";
+	
 	const [collapse, setCollapse] = useState(true);
     const [title, setTitle] = useState("Expand All");
     const [icon, setIcon] = useState("fa fa-chevron-right");
@@ -33,17 +37,13 @@ function App() {
             >
                 <i className={icon} /> {title}
             </button>
-            <CollapsingNode title="Personal information" collapse={collapse}>
-                <span>{text}</span>
+            <CollapsingNode title="Personal information" collapse={collapse} milestoneData={personalInfo}>
             </CollapsingNode>
-            <CollapsingNode title="Work experience" collapse={collapse}>
-                <span>{text}</span>
+            <CollapsingNode title="Work experience" collapse={collapse} milestoneData={workingExperience}>
             </CollapsingNode>
-            <CollapsingNode title="Academic formation" collapse={collapse}>
-                <span>{text}</span>
+            <CollapsingNode title="Academic formation" collapse={collapse} milestoneData={academicFormation}>
             </CollapsingNode>
-            <CollapsingNode title="Personal skills and competencies" collapse={collapse}>
-                <span>{text}</span>
+            <CollapsingNode title="Personal skills and competencies" collapse={collapse} milestoneData={competencies}>
             </CollapsingNode>
         </div>
     );
