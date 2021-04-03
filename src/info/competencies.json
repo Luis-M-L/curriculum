@@ -1,5 +1,9 @@
 [
 	{	"datatype": "competencies"},
+	{	
+		"label": "Mother tongue",
+		"description": ["Spanish"]
+	},
 	{
 		"label": "Social skills and competencies",
 		"description": [

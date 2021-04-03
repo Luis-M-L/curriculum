@@ -1,5 +1,8 @@
 [
-	{	"datatype": "academics"},
+	{	"datatype": "academics",
+		"site-key": "Educational establishment",
+		"sector-key": null
+	},
 	{
 		"dates": "2013 - 2018",
 		"position": "Engineering of Telecomunications, Sound and Image Degree.",

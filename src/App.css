@@ -37,6 +37,22 @@
   }
 }
 
+.collapse-button {
+	text-align: left;
+	display: block;
+	width: 100%;
+    color: #fff;
+    background-color: #6e757b;
+    border-color: #6e757b;
+	-webkit-appearance: button;
+	margin: 0;
+	border-radius: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	box-sizing: border-box;
+}
+
 .fecha-puesto {
 	font-family: cursive;
 }
@@ -44,16 +60,30 @@
 	font-family: cursive;
 }
 
-.milestone-form, .position {
+.personal-labels,
+.site-label, .site-info, .sector-label, .sector-info,
+.milestone-form, .position, .blank-tareas, .lista-tareas,
+.competencies-label, .competencies-description {
 	 display: inline-block;
 	 padding: 5px 25px 5px 25px;
 }
 
-.personal-container, .personal-data, .foto-container {
+.personal-data, .foto-container {
 	 display: inline-block;
 	 padding: 5px 25px 5px 25px;
 }
 
-.milestone-form, .company-form, .sector-form {
+.milestone-form, .company-form, .sector-form, .blank-tareas,
+.competencies-label, .personal-labels, .site-label, .sector-label {
+	vertical-align: top;
 	text-align: right;
+	width: 30%;
+}
+
+.lista-tareas, .competencies-description, .site-info, .sector-info {
+	width: 70%;
+}
+
+.personal-data {
+	width: 40%;
 }

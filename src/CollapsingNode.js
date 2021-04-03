@@ -27,7 +27,7 @@ function CollapsingNode({ children, ...props }) {
     <div className="coll-panel">
       <button
         type="button"
-        className="coll-panel-btn btn-primary btn-block text-left"
+        className="collapse-button"
         onClick={() => fantasy()}
       >
         <i /> {title}
@@ -62,23 +62,31 @@ function getFormattedInfo(milestoneData){
 function getPersonalNode(milestoneData){
 	return (
 		<div className="personal-container">
-			<div className="personal-labels">
-				<p>Full name</p>
-				<p>Address</p>
-				<p>Phone</p>
-				<p>e-Mail</p>
-				<p>Nationality</p>
-				<p>Birthdate</p>
-				<p>Sex</p>
+			<div>
+				<div className="personal-labels">Full name</div>
+				<div className="personal-data">{milestoneData[1]["fullname"]}</div>
 			</div>
-			<div className="personal-data">
-				<p>{milestoneData[1]["fullname"]}</p>
-				<p>{milestoneData[1]["address"]}</p>
-				<p>{milestoneData[1]["phone"]}</p>
-				<p>{milestoneData[1]["email"]}</p>
-				<p>{milestoneData[1]["nationality"]}</p>
-				<p>{milestoneData[1]["birthdate"]}</p>
-				<p>{milestoneData[1]["sex"]}</p>
+			<div>
+				<div className="personal-labels">Address</div>
+				<div className="personal-data">{milestoneData[1]["address"]}</div>
+			</div>
+			<div>
+				<div className="personal-labels">Phone</div>
+				<div className="personal-data">{milestoneData[1]["phone"]}</div>
+			</div>
+				<div className="personal-labels">e-Mail</div>
+				<div className="personal-data">{milestoneData[1]["email"]}</div>
+			<div>
+				<div className="personal-labels">Nationality</div>
+				<div className="personal-data">{milestoneData[1]["nationality"]}</div>
+			</div>
+			<div>
+				<div className="personal-labels">Birthdate</div>
+				<div className="personal-data">{milestoneData[1]["birthdate"]}</div>
+			</div>
+			<div>
+				<div className="personal-labels">Sex</div>
+				<div className="personal-data">{milestoneData[1]["sex"]}</div>
 			</div>
 			<div className="foto-container">
 			<img src='../public/profile.png' alt=""/>
@@ -108,27 +116,54 @@ function fillWorkNode(data){
 				<div className="milestone-form">{data[1]["dates"]}</div>
 				<div className="position">{data[1]["position"]}</div>
 			</div>
-			<div className="tareas">{data[1]["tasks"]}</div>
-			<div className="donde">{data[1]["company"]}</div>
-			<div className="sector">{data[1]["sector"]}</div>
+			<div className="tareas">
+				<div className="blank-tareas"/>
+				<div className="lista-tareas">{data[1]["tasks"]}</div>
+			</div>
+			<div className="donde">
+				<div className="site-label">{data[0]["site-key"]}</div>
+				<div className="site-info">{data[1]["company"]}</div>
+			</div>
+			<div className="sector">
+				<div className="sector-label">{data[0]["sector-key"]}</div>
+				<div className="sector-info">{data[1]["sector"]}</div>
+			</div>
 		</div>
 		<div className="milestone">
 			<div className="fecha-puesto">
 				<div className="milestone-form">{data[2]["dates"]}</div>
 				<div className="position">{data[2]["position"]}</div>
 			</div>
-			<div className="tareas">{data[2]["tasks"]}</div>
-			<div className="donde">{data[2]["company"]}</div>
-			<div className="sector">{data[2]["sector"]}</div>
+			<div className="tareas">
+				<div className="blank-tareas"/>
+				<div className="lista-tareas">{data[2]["tasks"]}</div>
+			</div>
+			<div className="donde">
+				<div className="site-label">{data[0]["site-key"]}</div>
+				<div className="site-info">{data[2]["company"]}</div>
+			</div>
+			<div className="sector">
+				<div className="sector-label">{data[0]["sector-key"]}</div>
+				<div className="sector-info">{data[2]["sector"]}</div>
+			</div>
 		</div>
 		<div className="milestone">
 			<div className="fecha-puesto">
 				<div className="milestone-form">{data[3]["dates"]}</div>
 				<div className="position">{data[3]["position"]}</div>
 			</div>
-			<div className="tareas">{data[3]["tasks"]}</div>
-			<div className="donde">{data[3]["company"]}</div>
-			<div className="sector">{data[3]["sector"]}</div>
+			<div className="tareas">
+				<div className="blank-tareas"/>
+				<div className="lista-tareas">{data[3]["tasks"]}</div>
+			</div>
+			<div className="donde">
+				<div className="site-label">{data[0]["site-key"]}</div>
+				<div className="site-info">	{data[3]["company"]}</div>
+			</div>							
+			<div className="sector">
+				<div className="sector-label">{data[0]["sector-key"]}</div>
+				<div className="sector-info">{data[3]["sector"]}</div>
+			</div>
 		</div>
 	</div>
 	);
@@ -142,16 +177,20 @@ function getCompetenciesNode(milestoneData){
 	return (
 		<div>
 			<div>
-				<span>{milestoneData[1]["label"]}</span>
-				<span>{milestoneData[1]["description"]}</span>
+				<span className="competencies-label">{milestoneData[1]["label"]}</span>
+				<span className="competencies-description">{milestoneData[1]["description"]}</span>
 			</div>
 			<div>
-				<span>{milestoneData[2]["label"]}</span>
-				<span>{milestoneData[2]["description"]}</span>
+				<span className="competencies-label">{milestoneData[2]["label"]}</span>
+				<span className="competencies-description">{milestoneData[2]["description"]}</span>
 			</div>
 			<div>
-				<span>{milestoneData[3]["label"]}</span>
-				<span>{milestoneData[3]["description"]}</span>
+				<span className="competencies-label">{milestoneData[3]["label"]}</span>
+				<span className="competencies-description">{milestoneData[3]["description"]}</span>
+			</div>			
+			<div>
+				<span className="competencies-label">{milestoneData[4]["label"]}</span>
+				<span className="competencies-description">{milestoneData[4]["description"]}</span>
 			</div>
 		</div>
 	);

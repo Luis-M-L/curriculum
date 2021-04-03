@@ -1,5 +1,8 @@
 [
-	{	"datatype": "work"},
+	{	"datatype": "work",
+		"site-key": "Company name and address",
+		"sector-key": "Business sector"
+	},
 	{
 		"dates": "2018 (September) - present",
 		"position": "Java Developer and technical support.",
