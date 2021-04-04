@@ -1,16 +1,20 @@
 [
-	{	"datatype": "competencies"},
+	{	"key": 0,
+		"datatype": "competencies"},
 	{	
+		"key": 1,
 		"label": "Mother tongue",
 		"description": ["Spanish"]
 	},
 	{
+		"key": 2,
 		"label": "Social skills and competencies",
 		"description": [
 			"Leadership and personal communication, naturally developed and boosted in student temporal jobs."
 		]
 	},
 	{
+		"key": 3,
 		"label": "Management skills and competencies",
 		"description": [
 			"Tasks division for a team, naturally developed and boosted in student temporal jobs.",
@@ -18,6 +22,7 @@
 		]
 	},
 	{
+		"key": 4,
 		"label": "Technical skills and competencies",
 		"description": [
 			"Programming skills (Java, Android, Matlab JavaScript, y SQL) and telecomunication (broadcasting, voice, IP networks, signal encoding, etc.) adquired in the degree and furtherly developed by my own curiosity.",
