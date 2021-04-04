@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Collapse } from "reactstrap";
 
-//import MilestoneNode from './MilestoneNode';
+import profile from './profile.png';
 
 function CollapsingNode({ children, ...props }) {
 	
@@ -62,34 +62,34 @@ function getFormattedInfo(milestoneData){
 function getPersonalNode(milestoneData){
 	return (
 		<div className="personal-container">
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Full name</div>
 				<div className="personal-data">{milestoneData[1]["fullname"]}</div>
 			</div>
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Address</div>
 				<div className="personal-data">{milestoneData[1]["address"]}</div>
 			</div>
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Phone</div>
 				<div className="personal-data">{milestoneData[1]["phone"]}</div>
 			</div>
 				<div className="personal-labels">e-Mail</div>
 				<div className="personal-data">{milestoneData[1]["email"]}</div>
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Nationality</div>
 				<div className="personal-data">{milestoneData[1]["nationality"]}</div>
 			</div>
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Birthdate</div>
 				<div className="personal-data">{milestoneData[1]["birthdate"]}</div>
 			</div>
-			<div>
+			<div className="personal-text">
 				<div className="personal-labels">Sex</div>
 				<div className="personal-data">{milestoneData[1]["sex"]}</div>
 			</div>
 			<div className="foto-container">
-			<img src='../public/profile.png' alt=""/>
+				<img src={profile} alt=""/>
 			</div>
 		</div>
 	);

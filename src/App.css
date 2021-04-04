@@ -60,15 +60,11 @@
 	font-family: cursive;
 }
 
-.personal-labels,
+.personal-labels, .personal-data,
+.milestone-form, .position, 
+.blank-tareas, .lista-tareas,
 .site-label, .site-info, .sector-label, .sector-info,
-.milestone-form, .position, .blank-tareas, .lista-tareas,
 .competencies-label, .competencies-description {
-	 display: inline-block;
-	 padding: 5px 25px 5px 25px;
-}
-
-.personal-data, .foto-container {
 	 display: inline-block;
 	 padding: 5px 25px 5px 25px;
 }
@@ -86,4 +82,19 @@
 
 .personal-data {
 	width: 40%;
+}
+.personal-container {
+	position: relative;
+}
+.foto-container {
+	width: 30%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+img {
+	width: 54%;
+	margin: 4% 4% 23% 23%;
+	display: inline;
 }
