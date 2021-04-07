@@ -11,11 +11,13 @@ class MyHistoryContainer extends React.Component {
 	  console.log("DataContainer constructor()");
 	  data = data.data;
     super();
-	
-    // the data 
+	 
 	for(var i = 1; i < data.length; i++){
 		this.state.children.push(data[i]);
 	}
+	
+	this.state.metadata["site-key"] = data[0]["site-key"];
+	this.state.metadata["sector-key"] = data[0]["sector-key"];
   }
   
   render(){
@@ -30,7 +32,7 @@ class MyHistoryContainer extends React.Component {
 			</div>
 			<div className="tareas">
 				<div className="blank-tareas"/>
-				<div className="lista-tareas">{this.getFormattedTasks(val, val["tasks"])}</div>
+				<div className="lista-tareas-container">{this.getFormattedTasks(val, val["tasks"])}</div>
 			</div>
 			<div className="donde">
 				<div className="site-label">{this.state.metadata["site-key"]}</div>

@@ -53,16 +53,10 @@
 	box-sizing: border-box;
 }
 
-.fecha-puesto {
-	font-family: cursive;
-}
-.position {
-	font-family: cursive;
-}
-
+/* General structure */
 .personal-labels, .personal-data,
 .milestone-form, .position, 
-.blank-tareas, .lista-tareas,
+.blank-tareas, .lista-tareas-container,
 .site-label, .site-info, .sector-label, .sector-info,
 .competencies-label, .competencies-description {
 	 display: inline-block;
@@ -74,12 +68,14 @@
 	vertical-align: top;
 	text-align: right;
 	width: 30%;
+	font-style: italic;
 }
 
-.lista-tareas, .competencies-description, .site-info, .sector-info {
+.lista-tareas-container, .competencies-description, .site-info, .sector-info {
 	width: 70%;
 }
 
+/* Personal */
 .personal-data {
 	width: 40%;
 }
@@ -92,9 +88,20 @@
 	top: 0;
 	right: 0;
 }
-
 img {
 	width: 54%;
 	margin: 4% 4% 23% 23%;
 	display: inline;
+}
+
+/* Working experience and academics */
+.milestone {
+	margin: 2% 2% 0% 0%;
+}
+.position {
+	font-size: large;
+	text-decoration: underline black;
+}
+.lista-tareas {
+	margin: 0;
 }
