@@ -1,0 +1,33 @@
+[
+{	"key": 0,
+	"datatype": "personal"
+},
+{
+	"key": "Full name",
+	"value": "Luis Martínez López"
+},
+{
+	"key": "Address",
+	"value": "Apt. B, floor, 15 La Laguna St., Las Rozas de Madrid, Madrid, Spain, 28231"
+},
+{
+	"key": "Phone",
+	"value": "+34 699 119 939"
+},
+{
+	"key": "e-Mail",
+	"value": "luismtinezlopez@gmail.com"
+},
+{
+	"key": "Nationality",
+	"value": "Spanish"
+},
+{
+	"key": "Birthdate",
+	"value": "1995-10-23"
+},
+{
+	"key": "Sex",
+	"value": "Male"
+}
+]

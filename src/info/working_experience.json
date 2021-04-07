@@ -1,0 +1,31 @@
+[
+	{	"key": 0,
+		"datatype": "work",
+		"site-key": "Company name and address",
+		"sector-key": "Business sector"
+	},
+	{
+		"key": 1,
+		"dates": "2018 (September) - present",
+		"position": "Java Developer and technical support.",
+		"tasks": ["Git and Maven usage.", "Java code implementing (Spring and EJB).", "REST and SOAP.", "Search and update in database (SQL).", "Jboss and Tomcat basics.", "Financial markets knowledge.", "Dialogue with users."],
+		"company": "Optimissa Capital Markets Consulting, José Echegaray St., 14, 28232 Las Rozas (Madrid), Spain.",
+		"sector": "Financial markets functional and technical consulting."
+	},
+	{
+		"key": 2,
+		"dates": "2018 (February) - 2018 (September)",
+		"position": "Junior Java Developer.", 
+		"tasks": ["Unit testing with JUnit.", "Java code implementing.", "REST and SOAP.", "Git and Maven usage.", "Dependency Injection (CDI and Spring).", "Autonomous time managing."],
+		"company": "Sopra Steria, Manoteras Av., 48, 28050 Madrid, Spain.", 
+		"sector": "Software and digital transformation consulting."
+	},
+	{
+		"key": 3,
+		"dates": "2015 - 2018",
+		"position": "Internship.", 
+		"tasks": ["Basic use of Linux systems.", "Video processing and encoding", "Software develop.", "Wireless networks configuration."],
+		"company": "Azimut Electronics, Dels Furs St., 46701 Gandia (Valencia), Spain.", 
+		"sector": "Entertainment in means of transport."
+	}
+]

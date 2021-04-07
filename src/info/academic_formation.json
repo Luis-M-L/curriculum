@@ -1,0 +1,31 @@
+[
+	{	"key": 0,
+		"datatype": "academics",
+		"site-key": "Educational establishment",
+		"sector-key": null
+	},
+	{
+		"key": 1,
+		"dates": "2013 - 2018",
+		"position": "Engineering of Telecomunications, Sound and Image Degree.",
+		"tasks": ["Design and configuration of networks in a logical tier.","Java, JavaScript, native Android, SQL and Matlab programming. ","Advanced lineal y matrix algebra, and statistic basis. ","Free and guided propagation of electromagnetic and acoustic waves","Analogical and digital data transmission.","Electronics and physics basis.","Any nature problem solving."],
+		"company": "Universitat Politècnica de València.",
+		"sector": null
+	},
+	{
+		"key": 2,
+		"dates": "2011 - 2013",
+		"position": "Science and Technology Baccalaureate.", 
+		"tasks": ["Technical drawing.","All main pure sciences basis.","Complementary education on Philosophy, Spanish Language, English Language and History."],
+		"company": "Secondary School Las Fuentes (Villena).", 
+		"sector": null
+	},
+	{
+		"key": 3,
+		"dates": "1998 - 2011",
+		"position": "Primary and Secondary education.", 
+		"tasks": ["Values education, like fellowship, effort and respect."],
+		"company": "Salesianos Maria Auxiliadora school (Villena).", 
+		"sector": null
+	}
+]
