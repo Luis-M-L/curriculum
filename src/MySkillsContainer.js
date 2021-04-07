@@ -24,7 +24,7 @@ class MySkillsContainer extends React.Component {
       return (
         <div>
 			<span className="competencies-label">{val["label"]}</span>
-			<span className="competencies-description">{val["description"]}</span>
+			<span className="competencies-description">{this.getFormattedDescriptions(val["description"])}</span>
 		</div>
       )
     });
@@ -34,6 +34,17 @@ class MySkillsContainer extends React.Component {
         {children}
       </div>
     );
+  }
+  
+  getFormattedDescriptions(descriptions){
+	  const descriptionsUlist = descriptions.map((val) => {
+		  return <li>{val}</li>
+	  });
+	  return (
+		  <ul className="lista-descriptions">
+			{descriptionsUlist}
+		  </ul>
+	  );
   }
 }
 

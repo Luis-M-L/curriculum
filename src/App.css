@@ -102,6 +102,6 @@ img {
 	font-size: large;
 	text-decoration: underline black;
 }
-.lista-tareas {
+.lista-tareas, .lista-descriptions {
 	margin: 0;
 }
