@@ -30,7 +30,7 @@ class MyHistoryContainer extends React.Component {
 			</div>
 			<div className="tareas">
 				<div className="blank-tareas"/>
-				<div className="lista-tareas">{val["tasks"]}</div>
+				<div className="lista-tareas">{this.getFormattedTasks(val, val["tasks"])}</div>
 			</div>
 			<div className="donde">
 				<div className="site-label">{this.state.metadata["site-key"]}</div>
@@ -49,6 +49,17 @@ class MyHistoryContainer extends React.Component {
         {children}
       </div>
     );
+  }
+  
+  getFormattedTasks(milestoneData, tasks){
+	  const taskUlist = tasks.map((val) => {
+		  return <li>{val}</li>
+	  });
+	  return (
+		  <ul className="lista-tareas">
+			{taskUlist}
+		  </ul>
+	  );
   }
 }
 
